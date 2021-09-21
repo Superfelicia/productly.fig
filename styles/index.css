@@ -1,0 +1,65 @@
+/*rectangle*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: relative;
+    width: 1400px;
+    height: 78px;
+    top: 20px;
+    background: #FFFFFF;
+    transform: matrix(1, 0, 0, -1, 0, 0,);
+}
+
+.logo {
+    display: flex;
+    width: 185px;
+    height: 32px;
+    left: 144px;
+    top: 22px;
+    
+}
+
+.links {
+    height: 28px;
+    left: 650px;
+    right: 28.6%;
+    top: calc(50% - 28px/2 - 1px);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.sign-up, .sign-in {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+}
+
+.sign-in {
+    height: 24px;
+    left: 25%;
+    right: 22%;
+    top: calc(50% - 24px/2);
+    color: #173a56;
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+}
+
+
+.sign-up {
+    height: 24px;
+    left: 23%;
+    right: 21%;
+    top: calc(50% - 24px/2);
+    color: #FFFFFF;
+    background: #ff9900;
+}
+
+
+
