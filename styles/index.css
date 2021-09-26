@@ -1,50 +1,68 @@
 html, head {
     position: relative;
-    max-width: 250px;
+    max-width: 1400px;
     width: 100%;
-    min-height: 3843px;
-    left: 298px;
     background: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* rectangle-head */
+body {
+    width: 100%; /* viewport width/ viewport height */
+}
 
-.logo {
-    width: 185.34px;
-    height: 31.97px;
-    left: 143.92px;
-    top: 22px;
+button {
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    height: 100%;
+    width: 1400px;
+    /*margin: 0 auto;*/
 }
 
 nav {
-    position: absolute;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     width: 1400px;
     height: 78px;
-    top: 20px;
     background: #FFFFFF;
 }
 
-.links {
-    height: 28px;
-    left: 46.43%;
-    right: 28.6%;
-    top: calc(50% - 28px/2 - 1px);
-    font-family: 'Poppins', sans-serif;
+.logo {
+    left: 143.92px;
+    top: 42px;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin-right: 65px;
+    width: 350px;
+    
+}
+
+.link {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 28px;
     color: #2f281e;
+    text-align: center;
 }
 
 .sign-up, .sign-in {
-    height: 24px;
-    top: calc(50% - 24px/2);
-    font-family: 'Poppins', sans-serif;
+    height: 46px;
+    width: 110px;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -54,45 +72,39 @@ nav {
 }
 
 .sign-in {
-    left: 25%;
-    right: 22%;
     color: #173a56;
     border: 1px solid #BCD0E5;
-    box-sizing: border-box;
 }
 
 .sign-up {
-    left: 23%;
-    right: 21%;
     color: #FFFFFF;
     background: #ff9900;
+    border: none;
 }
 
 /* Header */
 header {
     display: flex;
-    /*justify-content: flex-start;*/
-    align-items: flex-start;
-    height: 496px;
-    width: 1126px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     left: 145px;
     top: 128px;
 }
 
-.header-text {
-    position: absolute;
+.header-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 518px;
-    height: 233px;
+    height: 331px;
     left: 145px;
-    top: 211px;
 }
 
 h1 {
     width: 518px;
     height: 108px;
-    left: 145px;
     top: 211px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
@@ -103,9 +115,6 @@ h1 {
 h2 {
     width: 458px;
     height: 95px;
-    left: 145px;
-    top: 349px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -115,7 +124,6 @@ h2 {
 
 /* buttons */
 .start {
-    position: absolute;
     width: 175px;
     height: 53px;
     left: 145px;
@@ -123,22 +131,18 @@ h2 {
     background: #ff9900;
     border: none;
     border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-
 }
 
 .video {
-    position: absolute;
     width: 161px;
     height: 24px;
     left: 350px;
     top: 504px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -149,56 +153,40 @@ h2 {
 }
 
 .play {
-    position: relative;
     width: 20px;
     height: 17px;
     top: 1.5px;
     left: 17.5px;
-    /*left: 10.87%;
-    right: 76.71%;
-    top: 6.52%;
-    bottom: 19.57%;*/
     background: #ff9900;
 }
 
 /* image */
 .container {
     display: flex;
-    position: relative;
     width: 605px;
     height: 496px;
     left: 666px;
     top: 128px;
 }
+
 .jumpers {
-    position: absolute;
-    width: 605px;
-    height: 496px;
-    left: 666px;
-    top: 128px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
 /* Feature */
 .feature {
-    position: absolute;
     display: flex;
-    align-items: flex-start;
-    width: 2211px;
-    height:543px;
-    left: -406px;
-    top: 734px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .feature-head {
-    position: relative;
-    height: 108px;
-    width: 539px;
-    left: 38.22%;
-    right: 37.4%;
-    top: calc(50% - 108px/2 - 217.5px);
-    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 76px;
+    width: 500px;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -209,48 +197,16 @@ h2 {
 
 .big-card {
     display: flex;
-    position: absolute;
     width: 1095px;
-    height: 204px;
-    left: 161px;
-    top: 896px;
+    justify-content: space-between;
 }
 
-.card-one {
-    position: absolute;
-    height: 178px;
-    width: 240px;
-    left: 567px;
-    top: 162px;
+.card {
+    width: 250px;
 }
 
-.card-two {
-    position: absolute;
-    height: 178px;
-    width: 240px;
-    left: 853px;
-    top: 162px;
-}
-
-.card-three {
-    position: absolute;
-    height: 178px;
-    width: 240px;
-    left: 1138px;
-    top: 162px;
-}
-
-.card-four {
-    position: absolute;
-    height: 204px;
-    width: 240px;
-    left: 1422px;
-    top: 162px;
-}
-
-h3 {
-    
-    font-family: 'Poppins', sans-serif;
+/* in-direkt "barn" > */
+.card > h3 {
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -258,3 +214,22 @@ h3 {
     text-align: left;
 }
 
+.card > p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    color: grey;
+}
+
+/*.checkbox {
+    display: flex;
+    width: 175px;
+    height: 53px;
+    top: 400px;
+    left: 1027px;
+    background-color: orange;
+    color: #FFFFFF;
+    border-radius: 5px;
+}*/
